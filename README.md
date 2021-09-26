@@ -99,23 +99,30 @@ nodes and accounts. I named the network as 'fintechnet'
 
 #### Send a test transaction
 
-* Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
+* Used the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
 
-* You will need to use a custom network, and include the chain ID, and use ETH as the currency.
-
-![custom-node](Images/custom-node.png)
+* I used a custom network (zbank2), and included the chain ID (555), and used ETH as the currency.
 
 * Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
 
+![Screenshot 1](https://user-images.githubusercontent.com/83671629/134817630-bc8842ca-c731-496f-89c0-b96c28af4505.png)
+
 * Send a transaction from the `node1` account to the `node2` account.
 
+![Screenshot 2](https://user-images.githubusercontent.com/83671629/134817648-bf9641b6-bebc-44c0-8462-0840c6459697.png)
+
 * Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
+![Screenshot 3](https://user-images.githubusercontent.com/83671629/134817673-b9c4d1e2-32c3-4858-83ff-155eedb883c5.png
 
 * Screenshot the transaction metadata (status, tx hash, block number, etc) and save it to your Screenshots folder.
 
+
+![Screenshot 8](https://user-images.githubusercontent.com/83671629/134817703-290f7333-2feb-49fd-859f-9cbcb9f5d28d.png)
+
 * Celebrate, you just created a blockchain and sent a transaction!
 
-![transaction-success](Images/transaction-success.png)
+![Screenshot 9](https://user-images.githubusercontent.com/83671629/134817803-a9ee8572-a517-4f37-afd2-0c8372b86a4a.png)
+
 
 #### Create a repository, and instructions for launching the chain
 
@@ -147,10 +154,5 @@ nodes and accounts. I named the network as 'fintechnet'
 
 * If that doesn't help make sure you are sending a large enough sum of ETH to see actual movement in the digits. You may have to click on the amount itself to see the full value down to the WEI.
 
-### Submission
-
-* Include all appropriate requirements in a GitHub repository.
-
-* Submit the link to your GitHub repository to Bootcamp Spot.
 
 ---
