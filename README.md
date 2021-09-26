@@ -52,29 +52,48 @@ nodes and accounts. I named the network as 'fintechnet'
 
 * Created accounts for two (or more) nodes for the network with a separate `datadir` for each using `geth` called it 'node1' and 'node2'.
 
-* Ran `puppeth`, named my network as *fintechnet*, and selectd the option to configure a new genesis block.
+![Screenshot 4](https://user-images.githubusercontent.com/83671629/134816902-710bd597-b914-4e66-a5c1-f860952f7f48.png)
 
+
+![Screenshot 5](https://user-images.githubusercontent.com/83671629/134816922-a69273cb-4c88-49e9-aec4-6a28902a0a16.png)
+
+
+* Ran `puppeth`, named my network as *zbank2*, and selectd the option to configure a new genesis block.
 * Choose the `Clique (Proof of Authority)`(option 2) consensus algorithm.
 
-* Pasted both account addresses from the first step, one at a time into the list of accounts to seal.
+![Screenshot - puppeth](https://user-images.githubusercontent.com/83671629/134817001-25b97333-7401-4592-9d10-f6d8c231a488.png)
 
+
+* Pasted both account addresses from the first step, one at a time into the list of accounts to seal.
 * Pasted them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+
+![Screenshot account seal](https://user-images.githubusercontent.com/83671629/134817307-9763863d-c3dd-4140-b4fd-87beb462fb0c.png)
+
 
 * Completed the rest of the prompts, and when back at the main menu, choose the "Manage existing genesis" option.
 
 * Export genesis configurations. This will fail to create two of the files, but we only need `fintechnet.json`.
 
-* I deleted the `fintechnet-harmony.json` file.
+* I deleted the `zbank2-harmony.json` file.
 
 * Screenshot the `puppeth` configuration once complete and saved it to the Screenshots folder.
 
-* Initialized each node with the new `fintechnet.json` with `geth`.
+* Initialized each node with the new `zbank2.json` with `geth`.
+
+![Screenshot initialize with geth](https://user-images.githubusercontent.com/83671629/134817391-534234bd-ea5c-4592-bdb1-bd203b72ce8c.png)
 
 * Ran the first node, unlockd the account, enabled mining, and the RPC flag. Only one node needs RPC enabled.
 
-* Set a different peer port for the second node and used the first node's `enode` address ( as the `bootnode` flag.
+
+* Set a different peer port for the second node and used the first node's `enode` address ( as the `bootnode` flag.)
+
+![Screenshot 4](https://user-images.githubusercontent.com/83671629/134817420-38a4054f-1881-4020-a3a5-c961993bc992.png
+
 
 * unlockd the account and enabled mining on the second node!
+
+![Screenshot 5](https://user-images.githubusercontent.com/83671629/134817455-15f7397b-f2c4-4f98-94e1-1e87196bd5b5.png)
+
 
 * both nodes will be producing new blocks!
 
